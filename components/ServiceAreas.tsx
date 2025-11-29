@@ -1,66 +1,34 @@
 import React from 'react';
-import { MapPin, Navigation } from 'lucide-react';
-import { SectionHeading } from './ui/SectionHeading';
+import { MapPin } from 'lucide-react';
+import { SERVICE_AREAS } from '../constants';
 
-const AREAS = [
-  {
-    county: "Catawba County",
-    city: "Hickory & Surrounding",
-    description: "As a leading law firm in Catawba County, our mission is to provide high-quality legal services. From criminal cases to family law, we support all cities within Catawba."
-  },
-  {
-    county: "Burke County",
-    city: "Morganton & Surrounding",
-    description: "Our firm specializes in providing legal services for clients in Burke county. Our team has a deep understanding of local laws and regulations."
-  },
-  {
-    county: "Caldwell County",
-    city: "Lenoir & Surrounding",
-    description: "We serve all cities in Caldwell County with passion and integrity. We believe in building strong relationships and providing support when you need it most."
-  }
-];
-
-export const ServiceAreas: React.FC = () => {
+const ServiceAreas: React.FC = () => {
   return (
-    <section className="py-24 bg-beige relative overflow-hidden">
-      {/* Background Map Texture */}
-      <div 
-        className="absolute inset-0 opacity-10 pointer-events-none" 
-        style={{
-          backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Catawba_County_North_Carolina_Incorporated_and_Unincorporated_areas_Hickory_Highlighted.svg/1200px-Catawba_County_North_Carolina_Incorporated_and_Unincorporated_areas_Hickory_Highlighted.svg.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'grayscale(100%) contrast(150%)'
-        }}
-      ></div>
-      
-      <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <SectionHeading 
-          title="Service Areas" 
-          subtitle="Proudly serving the communities of Western North Carolina."
-        />
-        
+    <section className="py-20 bg-white relative overflow-hidden">
+      {/* Subtle Background Map */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Catawba_County_North_Carolina_Incorporated_and_Unincorporated_areas_Hickory_Highlighted.svg/1200px-Catawba_County_North_Carolina_Incorporated_and_Unincorporated_areas_Hickory_Highlighted.svg.png"
+            alt="Map Background"
+            className="w-full h-full object-cover grayscale"
+          />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+            <span className="text-primary font-bold tracking-widest uppercase text-sm">Where We Work</span>
+            <h2 className="mt-2 text-3xl md:text-4xl font-serif font-bold text-slate-900">Serving Western North Carolina</h2>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {AREAS.map((area, index) => (
-            <div 
-              key={index} 
-              className="bg-white/80 backdrop-blur-md p-8 border-t-4 border-burgundy shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
-            >
-              <div className="flex justify-between items-start mb-6">
-                <div className="bg-burgundy/10 p-3 rounded-full group-hover:bg-burgundy group-hover:text-white transition-colors duration-300">
-                   <MapPin className="w-6 h-6 text-burgundy group-hover:text-white" />
-                </div>
-                <Navigation className="w-5 h-5 text-gold opacity-50" />
+          {SERVICE_AREAS.map((area, index) => (
+            <div key={index} className="bg-slate-50/90 backdrop-blur-sm p-8 rounded-lg text-center border border-slate-100 group hover:border-primary/30 transition-colors shadow-sm">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                <MapPin className="w-8 h-8 text-primary" />
               </div>
-              
-              <h3 className="font-playfair text-2xl text-charcoal font-bold mb-2">{area.county}</h3>
-              <p className="font-montserrat text-xs font-bold text-ncred uppercase tracking-widest mb-4">
-                {area.city}
-              </p>
-              
-              <div className="w-12 h-[1px] bg-taupe mb-6"></div>
-              
-              <p className="font-lora text-charcoal/80 leading-relaxed text-base">
+              <h3 className="text-xl font-bold text-slate-900 mb-2">{area.county}</h3>
+              <p className="text-primary font-medium text-sm mb-4">{area.cities}</p>
+              <p className="text-slate-500 text-sm leading-relaxed">
                 {area.description}
               </p>
             </div>
@@ -70,3 +38,5 @@ export const ServiceAreas: React.FC = () => {
     </section>
   );
 };
+
+export default ServiceAreas;

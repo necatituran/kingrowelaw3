@@ -6,8 +6,9 @@ import Stats from './components/Stats';
 import Awards from './components/Awards';
 import Blog from './components/Blog';
 import { PracticeAreas } from './components/PracticeAreas';
-import { ServiceAreas } from './components/ServiceAreas';
-import { WhyChooseUs } from './components/WhyChooseUs';
+import ServiceAreas from './components/ServiceAreas';
+import WhyChooseUs from './components/WhyChooseUs';
+import Testimonials from './components/Testimonials';
 import { Team } from './components/Team';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -24,12 +25,13 @@ function App() {
         <About />
         <Stats />
         <Awards />
-        <Blog />
 
         {/* Design 3 Sections */}
         <PracticeAreas />
         <ServiceAreas />
         <WhyChooseUs />
+        <Testimonials />
+        <Blog />
         <Team />
         <Contact />
       </main>

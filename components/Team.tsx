@@ -29,8 +29,8 @@ export const Team: React.FC = () => {
     <section id="team" className="py-32 bg-white relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-20 text-center">
-          <SectionHeading 
-            title="Meet Our Attorneys" 
+          <SectionHeading
+            title="Meet The Partners"
             subtitle="Distinguished legal minds dedicated to your success and security."
           />
         </div>

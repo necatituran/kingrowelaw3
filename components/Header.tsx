@@ -42,14 +42,17 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex items-center relative z-50">
-              <a href="#" className="flex items-center">
-                <img
-                  src="/logo_1.png"
-                  alt="King & Rowe Law"
-                  className={`h-24 lg:h-32 w-auto transition-all duration-300 ${
-                    isMenuOpen ? 'brightness-0 invert' : (isScrolled ? '' : 'brightness-0 invert')
-                  }`}
-                />
+              <a href="#" className="flex flex-col items-center gap-1">
+                <div className={`text-2xl lg:text-3xl font-bold tracking-wider transition-colors duration-300 ${
+                  !isScrolled ? 'text-white' : 'text-slate-900'
+                }`}>
+                  <span className="font-serif">KING & ROWE</span>
+                </div>
+                <div className={`text-[10px] lg:text-xs font-semibold tracking-[0.3em] uppercase transition-colors duration-300 ${
+                  !isScrolled ? 'text-white' : 'text-slate-600'
+                }`}>
+                  ATTORNEYS AT LAW
+                </div>
               </a>
             </div>
 

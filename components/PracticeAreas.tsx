@@ -4,39 +4,19 @@ import { ArrowUpRight } from 'lucide-react';
 
 const PRACTICES = [
   {
-    title: "Criminal Defense",
-    description: "Aggressive defense for your rights and freedom. We handle felonies, misdemeanors, and federal cases with strategic precision.",
-    image: "https://images.unsplash.com/photo-1555374018-13a8994ab246?auto=format&fit=crop&q=80&w=800"
+    title: "Divorce & Family Law",
+    description: "Compassionate guidance through domestic matters including divorce, alimony, child custody, and adoption proceedings.",
+    image: "https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=800"
   },
   {
-    title: "Family Law",
-    description: "Compassionate guidance through domestic matters including divorce, alimony, and adoption proceedings.",
-    image: "https://images.unsplash.com/photo-1591522810850-58128c5fb089?auto=format&fit=crop&q=80&w=800"
+    title: "DUI & Criminal Defense",
+    description: "Aggressive defense for your rights and freedom. We handle DUI/DWI cases, felonies, misdemeanors, and traffic charges with strategic precision.",
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Estate Planning",
     description: "Secure your legacy and your family's future with comprehensive wills, trusts, and power of attorney documents.",
     image: "https://images.unsplash.com/photo-1762146828422-50a8bd416d3c?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    title: "Child Custody",
-    description: "Protecting the best interests of your children while advocating for your parental rights in custody disputes.",
-    image: "https://images.unsplash.com/photo-1594172104140-c9a59e38ec77?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    title: "Divorce",
-    description: "Navigating separation with dignity and strength. We protect your assets and future during contested and uncontested divorces.",
-    image: "https://images.unsplash.com/photo-1581112105345-a06ad5976509?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    title: "Traffic Charges",
-    description: "Defense against moving violations, speeding tickets, and citations to protect your license and insurance rates.",
-    image: "https://static.wixstatic.com/media/2542b9_6f4e47d3d9904aee9e54e0276c97b17a~mv2.jpg/v1/fill/w_371,h_366,fp_0.50_0.50,q_90,enc_avif,quality_auto/2542b9_6f4e47d3d9904aee9e54e0276c97b17a~mv2.jpg"
-  },
-  {
-    title: "DUI / DWI",
-    description: "Strategic defense against impaired driving charges. We challenge evidence and procedure to minimize impact on your life.",
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800"
   }
 ];
 
@@ -45,17 +25,17 @@ export const PracticeAreas: React.FC = () => {
     <section id="practice" className="py-24 md:py-32 bg-cream">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <SectionHeading 
-            title="Hickory Attorney Practice Areas" 
-            subtitle="Comprehensive legal solutions tailored to protect what matters most to you. We bring decades of experience to every case."
+          <SectionHeading
+            title="Comprehensive Legal Solutions"
+            subtitle="Expert legal representation tailored to protect what matters most to you. We bring decades of experience to every case."
           />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PRACTICES.map((practice, index) => (
-            <div 
+            <div
               key={index}
-              className={`group relative h-[420px] rounded-xl overflow-hidden cursor-pointer ${index === 6 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}`}
+              className="group relative h-[420px] rounded-xl overflow-hidden cursor-pointer"
             >
               {/* Image Layer */}
               <div className="absolute inset-0 z-0">

@@ -6,14 +6,9 @@ const Blog: React.FC = () => {
   return (
     <section id="blog" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-            <div>
-                <span className="text-primary font-bold tracking-widest uppercase text-sm">Legal Insights</span>
-                <h2 className="mt-2 text-3xl md:text-4xl font-serif font-bold text-slate-900">Latest News & Articles</h2>
-            </div>
-            <a href="#" className="hidden md:flex items-center text-primary font-semibold hover:text-slate-900 transition-colors mt-4 md:mt-0">
-                View All Posts <ArrowRight size={16} className="ml-2" />
-            </a>
+        <div className="text-center mb-12">
+            <span className="text-primary font-bold tracking-widest uppercase text-sm">Legal Insights</span>
+            <h2 className="mt-2 text-3xl md:text-4xl font-serif font-bold text-slate-900">Latest News & Articles</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,12 +38,6 @@ const Blog: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="mt-8 text-center md:hidden">
-            <a href="#" className="inline-flex items-center text-primary font-semibold hover:text-slate-900 transition-colors">
-                View All Posts <ArrowRight size={16} className="ml-2" />
-            </a>
         </div>
       </div>
     </section>
