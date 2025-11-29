@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8B1F29" />
+    <title>King & Rowe Law | Hickory & Newton, NC</title>
+    <meta name="description" content="Expert legal services in criminal defense, family law, and estate planning." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Heritage Palette
+              primary: '#8B1F29', // Burgundy - Main site color
+              burgundy: '#8B1F29',
+              maroon: '#6B1821',
+              cream: '#F5F1E8',
+              beige: '#E8DCC8',
+              taupe: '#C9B9A1',
+              charcoal: '#2D2D2D',
+              warmgray: '#5A5A5A',
+              gold: '#B8945F',
+              goldlight: '#C9A570',
+              copper: '#A67B5B',
+              ncred: '#CC0000', // NC State Red
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', 'serif'],
+              lora: ['"Lora"', 'serif'],
+              montserrat: ['"Montserrat"', 'sans-serif'],
+            },
+            boxShadow: {
+              'soft': '0 4px 20px rgba(0,0,0,0.06)',
+              'elevated': '0 15px 40px rgba(139, 31, 41, 0.15)',
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.15)',
+              'inner-light': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.2)',
+              '3d-red': '0 6px 0 #990000', // Solid 3D shadow for buttons
+            },
+            backgroundImage: {
+              'glass-gradient': 'linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+              'gold-gradient': 'linear-gradient(135deg, #B8945F 0%, #A67B5B 100%)',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'slide-up': 'slideUp 0.5s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+        background-color: #F5F1E8;
+      }
+      /* Custom Selection Color */
+      ::selection {
+        background: #CC0000;
+        color: white;
+      }
+      
+      /* 3D Glassmorphism Utilities */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .glass-button {
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.18);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+      }
+
+      .text-shadow-sm {
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      }
+      
+      .text-shadow-md {
+         text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
