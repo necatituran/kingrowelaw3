@@ -41,7 +41,7 @@ const Header: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="flex items-center relative z-50">
+            <div className="flex items-center relative z-[60]">
               <a href="#" className="flex flex-col items-center gap-1">
                 <div className={`text-2xl lg:text-3xl font-bold tracking-wider transition-colors duration-300 ${
                   !isScrolled ? 'text-white' : 'text-slate-900'
@@ -57,8 +57,8 @@ const Header: React.FC = () => {
             </div>
 
             {/* Hamburger Button */}
-            <button 
-              className={`flex items-center gap-2 font-medium tracking-widest text-xs uppercase z-50 transition-colors ${
+            <button
+              className={`relative flex items-center gap-2 font-medium tracking-widest text-xs uppercase z-[60] transition-colors ${
                 isMenuOpen ? 'text-white' : (isScrolled ? 'text-slate-900' : 'text-white')
               }`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
