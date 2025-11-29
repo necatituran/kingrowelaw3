@@ -6,7 +6,7 @@ const ServiceAreas: React.FC = () => {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       {/* Subtle Background Map */}
-      <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
+      <div className="absolute inset-0 opacity-[0.10] pointer-events-none">
           <img
             src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000"
             alt="North Carolina Map Background"
