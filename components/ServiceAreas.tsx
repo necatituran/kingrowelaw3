@@ -5,16 +5,7 @@ import { SERVICE_AREAS } from '../constants';
 const ServiceAreas: React.FC = () => {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
-      {/* Subtle Background Map */}
-      <div className="absolute inset-0 opacity-[0.10] pointer-events-none">
-          <img
-            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000"
-            alt="North Carolina Map Background"
-            className="w-full h-full object-cover grayscale blur-[2px]"
-          />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
             <span className="text-primary font-bold tracking-widest uppercase text-sm">Where We Work</span>
             <h2 className="mt-2 text-3xl md:text-4xl font-serif font-bold text-slate-900">Serving Western North Carolina</h2>

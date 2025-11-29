@@ -6,9 +6,20 @@ const Blog: React.FC = () => {
   return (
     <section id="blog" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-            <span className="text-primary font-bold tracking-widest uppercase text-sm">Legal Insights</span>
-            <h2 className="mt-2 text-3xl md:text-4xl font-serif font-bold text-slate-900">Latest News & Articles</h2>
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12">
+          <div>
+            <div className="inline-block mb-4">
+              <span className="font-montserrat text-primary font-bold tracking-[0.2em] text-xs uppercase border-b-2 border-primary pb-2">
+                Legal Insights
+              </span>
+            </div>
+            <h2 className="font-playfair text-4xl md:text-5xl text-slate-900 font-bold leading-[1.1]">
+              Latest News & Articles
+            </h2>
+          </div>
+          <a href="#" className="mt-4 md:mt-0 flex items-center gap-2 text-primary font-montserrat font-bold text-sm hover:gap-3 transition-all">
+            View All Posts <ArrowRight size={16} />
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

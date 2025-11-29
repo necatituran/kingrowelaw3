@@ -25,10 +25,17 @@ export const PracticeAreas: React.FC = () => {
     <section id="practice" className="py-24 md:py-32 bg-cream">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <SectionHeading
-            title="Our Expertise - Comprehensive Legal Solutions"
-            subtitle="Expert legal representation tailored to protect what matters most to you. We bring decades of experience to every case."
-          />
+          <div className="inline-block mb-4">
+            <span className="font-montserrat text-primary font-bold tracking-[0.2em] text-xs uppercase border-b-2 border-primary pb-2">
+              Our Expertise
+            </span>
+          </div>
+          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl text-slate-900 font-bold mb-6 leading-[1.1]">
+            Comprehensive Legal Solutions
+          </h2>
+          <p className="font-lora text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Expert legal representation tailored to protect what matters most to you. We bring decades of experience to every case.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -67,12 +74,12 @@ export const PracticeAreas: React.FC = () => {
 
                 {/* Footer: Title & Desc */}
                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="font-playfair text-3xl text-white font-bold mb-4 group-hover:text-gold transition-colors duration-300">
+                  <h3 className="font-sans text-3xl text-white font-bold mb-4 group-hover:text-gold transition-colors duration-300">
                     {practice.title}
                   </h3>
-                  
+
                   <div className="overflow-hidden">
-                    <p className="font-lora text-white/80 text-base leading-relaxed max-h-0 group-hover:max-h-[200px] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out border-l-2 border-gold pl-4">
+                    <p className="font-sans text-white/90 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out">
                       {practice.description}
                     </p>
                   </div>
