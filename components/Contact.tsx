@@ -71,7 +71,7 @@ export const Contact: React.FC = () => {
                 <div className="bg-white p-8 md:p-12 rounded-2xl border-2 border-slate-200 shadow-xl relative">
                    {/* Form Badge */}
                    <div className="absolute -top-6 right-8 bg-primary text-white px-6 py-2 rounded-full font-montserrat font-bold text-xs uppercase tracking-widest shadow-lg">
-                      Free Consultation
+                      Confidential Consultation
                    </div>
 
                    <form className="space-y-6">

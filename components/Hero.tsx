@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
           Excellence in <br />
           <span className="relative inline-block">
             <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400">Legal Counsel</span>
-            <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-transparent"></span>
+            <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#8B1F29] to-transparent"></span>
           </span>
         </h1>
         

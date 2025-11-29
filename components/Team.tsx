@@ -29,10 +29,17 @@ export const Team: React.FC = () => {
     <section id="team" className="py-32 bg-white relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-20 text-center">
-          <SectionHeading
-            title="Meet The Partners"
-            subtitle="Distinguished legal minds dedicated to your success and security."
-          />
+          <div className="inline-block mb-4">
+            <span className="font-montserrat text-primary font-bold tracking-[0.2em] text-xs uppercase border-b-2 border-primary pb-2">
+              Leadership
+            </span>
+          </div>
+          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl text-slate-900 font-bold mb-6 leading-[1.1]">
+            Meet The Partners
+          </h2>
+          <p className="font-lora text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Distinguished legal minds dedicated to your success and security.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">

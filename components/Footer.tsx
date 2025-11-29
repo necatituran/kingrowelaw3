@@ -13,8 +13,10 @@ export const Footer: React.FC = () => {
           
           {/* Brand & Social - Col Span 4 */}
           <div className="lg:col-span-4 flex flex-col">
-            <h3 className="font-playfair text-3xl font-bold text-white mb-2">KING & ROWE</h3>
-            <p className="font-montserrat text-[#8B1F29] text-xs tracking-[0.3em] uppercase mb-8">Attorneys at Law</p>
+            <div className="mb-6">
+              <h3 className="font-serif text-3xl font-bold tracking-wider text-white mb-1">KING & ROWE</h3>
+              <p className="font-montserrat text-[#8B1F29] text-xs tracking-[0.3em] uppercase font-semibold">ATTORNEYS AT LAW</p>
+            </div>
 
             <p className="font-lora text-white/70 leading-relaxed mb-8 max-w-sm">
               Providing unwavering legal support to the businesses and families of North Carolina. Uncompromising excellence in every case.

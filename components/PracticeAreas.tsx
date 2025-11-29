@@ -26,7 +26,7 @@ export const PracticeAreas: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <SectionHeading
-            title="Comprehensive Legal Solutions"
+            title="Our Expertise - Comprehensive Legal Solutions"
             subtitle="Expert legal representation tailored to protect what matters most to you. We bring decades of experience to every case."
           />
         </div>

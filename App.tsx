@@ -24,11 +24,11 @@ function App() {
         <Hero />
         <About />
         <Stats />
-        <Awards />
 
         {/* Design 3 Sections */}
         <PracticeAreas />
         <ServiceAreas />
+        <Awards />
         <WhyChooseUs />
         <Testimonials />
         <Blog />
