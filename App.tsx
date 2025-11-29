@@ -28,8 +28,8 @@ function App() {
         {/* Design 3 Sections */}
         <PracticeAreas />
         <ServiceAreas />
-        <Awards />
         <WhyChooseUs />
+        <Awards />
         <Testimonials />
         <Blog />
         <Team />
