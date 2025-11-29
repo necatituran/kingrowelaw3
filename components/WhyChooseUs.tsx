@@ -14,7 +14,7 @@ const WhyChooseUs: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Why Choose King & Rowe?</h2>
              <p className="text-slate-300 text-lg mb-8 leading-relaxed">
                 We combine the resources and experience of a large firm with the agility and
@@ -34,7 +34,7 @@ const WhyChooseUs: React.FC = () => {
              </div>
           </div>
 
-          <div className="lg:w-1/2 relative h-[500px]">
+          <div className="hidden lg:block lg:w-1/2 relative h-[500px]">
              {/* Collage Layout */}
              <div className="relative w-full h-full">
                 {/* Main Portrait - Left Big */}
